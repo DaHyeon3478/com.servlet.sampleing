@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+body{
+
+	background-color:;
+	margin: 10px 10px 80px;
+
+}
+
+/*글자수 제한 or ...*/
+.text_line{
+	 width:250px;
+      padding:0 5px;
+      overflow:hidden; /*글자크기가 width를 넘으면 보이지않게처리*/
+      text-overflow:ellipsis; /*글자넓이  width를 넘을 경우 생략부호를 표기함*/
+      white-space:nowrap; /*공백문자가 잇는경우 줄바꿈하지않고 한줄로처리*/
+}
+.text_line_s{
+	 width:100px;
+      padding:0 5px;
+      overflow:hidden;
+      text-overflow:ellipsis;
+      white-space:nowrap;
+}
+.text_line_m{
+	 width:130px;
+      padding:0 5px;
+      overflow:hidden;
+      text-overflow:ellipsis;
+      white-space:nowrap;
+}
+th{
+	white-space:nowrap; /*공백문자가 잇는경우 줄바꿈하지않고 한줄로처리*/
+}
+
+/*전체 레이아웃*/
+div#main_left{
+	width:800px; 
+	text-align:center;
+	float:left; 
+	font-size:20px;
+	
+	background:hsla(0, 0%, 80%, 100);
+    padding-bottom: 20px;
+    border-radius: 20px;
+	}
+	
+/*전체 레이아웃*/
+div#main{
+	width:800px; 
+	text-align:center;
+	float:left; 
+	margin-left:150px;
+	font-size:20px;
+	
+	background:hsla(0, 0%, 80%, 100);
+    padding-bottom: 20px;
+    border-radius: 20px;
+	}
+/*table 사이즈*/
+	table.table_set {
+	border-collapse: collapse;
+	background: white;
+	width: 700px;
+	margin: 0 auto;
+}
+/*테이블 밑줄 라인*/
+table tr.main_line{
+	border-bottom: 1px solid black;
+}
+
+table tr.line {
+	border-bottom: 1px dotted black;
+}
+/*마우스 올라갈시 컬러와 모양 변화*/
+table tr.line {
+	cursor: pointer;
+}
+
+table tr.line:hover {
+	background-color: #ecf0f1;
+}
+/*흰색 버튼*/
+input#White_button {
+	background-color: white;
+	border: none;
+	color: black;
+	text-decoration: none;
+	padding: 10px 15px;
+	font: 15px 굴림;
+}
+
+input#White_button  {
+	cursor: pointer;
+}
+
+input#White_button:hover {
+	background-color: #ecf0f1;
+	text-decoration: underline;
+	
+	/*bover마우스가올라갔을때*/
+	/*a{text-decoration:none}=하이퍼링크밑줄 없앰*/
+}
+
